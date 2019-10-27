@@ -13,9 +13,14 @@ namespace DelveWalls
         [Menu("Enable")]
         public ToggleNode Enable { get; set; }
 
+        [Menu("Maximum Range")]
+        public RangeNode<int> MaxRange { get; set; }
+
+
         public Settings()
         {
             Enable = new ToggleNode(false);
+            MaxRange = new RangeNode<int>(300, 1, 1000);
         }
 
     }
