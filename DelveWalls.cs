@@ -30,6 +30,7 @@ namespace DelveWalls
         public override bool Initialise()
         {
             IngameUI = GameController.IngameState.IngameUi;
+            Graphics.InitImage("directions.png", true);
             return true;
         }
 
